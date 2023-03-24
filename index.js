@@ -1,8 +1,9 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-const userRoute = require("./routes/User");
+const userRoute = require("./routes/user");
 const authRoute = require("./routes/Auth");
+
 
 mongoose.connect("mongodb+srv://yoye:Pass123@cluster0.r9cuqx7.mongodb.net/shop").then(() => console.log("success............")).catch((err) => {
     console.log(err);
@@ -20,3 +21,4 @@ app.listen(5000, () => {
     console.log("backend server is running");
 });
 
+console.log("hello");
